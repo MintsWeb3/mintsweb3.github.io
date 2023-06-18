@@ -1,0 +1,187 @@
+AI prompt
+
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: 'Roboto Mono', monospace;
+    padding-top: 20px;
+}
+
+.container {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.project-links {
+    margin-top: 20px;
+}
+
+.main-video {
+    width: 300px; /* reduced size */
+    height: auto;
+}
+
+.app-links a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.spheroid-logo {
+    height: 50px;
+    width: auto;
+}
+
+/* Styles for screens smaller than 768px */
+@media (max-width: 768px) {
+    .main-video {
+        width: 100%; /* full width on small screens */
+    }
+    
+    .logo {
+        width: 30px; /* smaller logo on small screens */
+        height: 30px;
+    }
+    
+    .spheroid-logo {
+        height: 30px; /* smaller logo on small screens */
+        width: auto;
+    }
+}
+
+
+.spheroid-logo {
+    height: 50px;
+    width: auto;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Cyberpunk Collective Mix Tape</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>The Cyberpunk Collective Mix Tape</h1>
+        <p>
+            The Cyberpunk Collective Mix Tape is an eclectic blend of independent music from artists around the web3 world. The mixtape is a pre-spinoff of the Cyberpunk Collective, inspired by the intergalactic refugees' journey from the Cyber Planetary System. The first two songs, "Cyberpunk Collective Theme" and "Best Stepdad" by the Nasty Hooks, set the tone for this cosmic musical adventure.
+        </p>
+        <div class="row">
+            <div class="col-md-6">
+                <iframe src="https://ipfs-2.thirdwebcdn.com/ipfs/QmUe6MdTHr4it2k7rMkLZZ44TGWVKZSFEcYCbrCzuD7LP4/erc1155.html?contract=0x07F6E20103624a89E218CBA1Ce9EA60bba84feCD&chain=%7B%22name%22%3A%22Polygon+Mainnet%22%2C%22chain%22%3A%22Polygon%22%2C%22rpc%22%3A%5B%22https%3A%2F%2Fpolygon.rpc.thirdweb.com%2F5a9bc94b87f7cbbbfbbc234bf1e07f0adf5f3cf3012c9f26f9fc9820d64df93a%22%5D%2C%22nativeCurrency%22%3A%7B%22name%22%3A%22MATIC%22%2C%22symbol%22%3A%22MATIC%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22matic%22%2C%22chainId%22%3A137%2C%22testnet%22%3Afalse%2C%22slug%22%3A%22polygon%22%7D&tokenId=1&primaryColor=purple" width="600px" height="600px" style="max-width:100%;" frameborder="0"></iframe>
+            </div>
+            <div class="col-md-6">
+                <iframe src="https://ipfs-2.thirdwebcdn.com/ipfs/QmUe6MdTHr4it2k7rMkLZZ44TGWVKZSFEcYCbrCzuD7LP4/erc1155.html?contract=0x07F6E20103624a89E218CBA1Ce9EA60bba84feCD&chain=%7B%22name%22%3A%22Polygon+Mainnet%22%2C%22chain%22%3A%22Polygon%22%2C%22rpc%22%3A%5B%22https%3A%2F%2Fpolygon.rpc.thirdweb.com%2F5a9bc94b87f7cbbbfbbc234bf1e07f0adf5f3cf3012c9f26f9fc9820d64df93a%22%5D%2C%22nativeCurrency%22%3A%7B%22name%22%3A%22MATIC%22%2C%22symbol%22%3A%22MATIC%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22matic%22%2C%22chainId%22%3A137%2C%22testnet%22%3Afalse%2C%22slug%22%3A%22polygon%22%7D&tokenId=0&primaryColor=purple" width="600px" height="600px" style="max-width:100%;" frameborder="0"></iframe>
+            </div>
+        </div>
+        <a href="index.html" class="btn btn-primary">Back to Main Page</a>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Emerald City Rug Pull</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>The Emerald City Rug Pull</h1>
+        <p>
+            The Emerald City Rug Pull is an intriguing murder mystery game, built with a mix of web3 and AI elements. The plot thickens with the murder of 'The Founder,' a wealthy, and controversial figure in the world of crypto. The victim was known for his project - The Cyberpunk Collective, an NFT collection, and a Mix Tape, both of which are integral parts of our game's narrative. Explore the game, the NFT collection, and the music as you dive into this suspense-filled adventure.
+        </p>
+        <div class="row">
+            <div class="col-md-4">
+                <!-- Video 1. -->
+                <video class="main-video" controls>
+                    <source src="ecrppromo1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="col-md-4">
+                <!-- Video 2. -->
+                <video class="main-video" controls>
+                    <source src="ecrppromo2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="col-md-4">
+                <!-- App links. -->
+                <div class="app-links">
+                    <a href="spatial_link" target="_blank">
+                        <img class="logo" src="spatial-logo.png" alt="Spatial Logo">
+                        Spatial Experience</a><p> - available on desktop, mobile, and VR<p><p>For AR Experience on mobile devices:<p>
+                    <a href="over_link" target="_blank">
+                        <img class="logo" src="over-logo.png" alt="Over Logo">
+                        Police Station on OVER the Reality
+                    </a>
+                    <a href="spheroid_link" target="_blank">
+                        <img class="logo spheroid-logo" src="spheroid-logo.png" alt="Spheroid Logo">
+                       Police Station on Spheroid
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-links">
+            <a href="collective.html" class="btn btn-primary">The Cyberpunk Collective: Galactic Refugees</a>
+            <a href="mixtape.html" class="btn btn-primary">The Cyberpunk Collective Mix Tape</a>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Cyberpunk Collective: Galactic Refugees</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>The Cyberpunk Collective: Galactic Refugees</h1>
+        <p>
+            The Cyberpunk Collective: Galactic Refugees is an NFT collection created by 'The Founder,' the victim of our game's murder mystery. It comprises intergalactic refugees who escaped from the destruction of the Cyber Planetary System. The characters in the collection are not just fascinating figures but are part of the unfolding narrative of The Emerald City Rug Pull game. This collection was released just before the tragic death of 'The Founder.' Dive into their world and explore the mystery.
+        </p>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="1.png" class="img-fluid rounded main-image" alt="Cyberpunk Collective Image">
+            </div>
+            <div class="col-md-6">
+                <iframe src="https://ipfs-2.thirdwebcdn.com/ipfs/QmZG9dPDYCpTuzM3mVvdtmpjqwCbhErPipNvT945QqzWHk?contract=0xdE7C3656bbAf5F50A95c130c250D8b654f9a9F67&chain=%7B%22name%22%3A%22Polygon+Mainnet%22%2C%22chain%22%3A%22Polygon%22%2C%22rpc%22%3A%5B%22https%3A%2F%2Fpolygon.rpc.thirdweb.com%2F5a9bc94b87f7cbbbfbbc234bf1e07f0adf5f3cf3012c9f26f9fc9820d64df93a%22%5D%2C%22nativeCurrency%22%3A%7B%22name%22%3A%22MATIC%22%2C%22symbol%22%3A%22MATIC%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22matic%22%2C%22chainId%22%3A137%2C%22testnet%22%3Afalse%2C%22slug%22%3A%22polygon%22%7D&primaryColor=purple" width="600px" height="600px" style="max-width:100%;" frameborder="0"></iframe>
+            </div>
+        </div>
+        <a href="index.html" class="btn btn-primary">Back to Main Page</a>
+    </div>
+</body>
+</html>
+
+This is the code for my website on the Emerald City Rug Pull and The Cyberpunk Collective and the Cyberpunk Mix Tape.  I like the structure and want to keep it this way, but I want to make it a substructure to my main "Mints" page.  "Mints" is the name of my web 3 project that i have been working on for the past two years.  Mints is about digital land development and web3 solutions.  Mints is exploring and creating utility for digital assets.  Mints has organized several projects and events in spatial computing including the AR/Web3 Easter Egg Hunt (2 years running), the easter game was the beginning of a steady progression of game quality.  Mints incorporated sponsors and also rewarded contributors for their efforts with a squid.biz contract. mints hosts twitter spaces twice a week on mondays (6am pacific) and thursdays (3pm pacific).  Mints is currently developing digital land in Sonoma County.  Look for our maps on OVER the Reality.  The goal is to NeRF all the public areas of town.  Exploring the utility of these NeRFs is a big Mints priority too.  Another event Mints partnered on was "Santa is Missing" game we did at christmas.  Mints also organized the OVER the Reality community for NFTLA in 2021. mints was involved in NFT Seattle event last year as well. Chat gpt should write a nice introduction about Mints based on this information and place it on this new main page.  the title of my new head webpage should be "Mints: A web3 joint" there should be a link to the emerald city rug pull page and also placeholders for links to property development page and one to a past projects page.  The main page will feature the mints logo and a .png for an image.  There should also be a place for my linktree.  
+
+All of this should be styled like the current pages that i give you the code for here.  make this main "Mints" page with a design that is designed to engage and generate clicks.   
+
+Here is a name of a file for a picture i want on this new page: "metagamemultiverse.png" 
+
+the above picture should be labeled "Weekly twitter spaces hosted by Mints"
+
+Here is the file name for the main picture: "MINTS BANNER Twitter Header 1500x500.png"
+
+Here is  a file name for a picture to be associated with the "Emerald City Rug Pull" link: "ecrplink.png"
+
+
+
+

@@ -1,0 +1,63 @@
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: 'Roboto Mono', monospace;
+    padding-top: 20px;
+}
+
+.container {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.project-links {
+    margin-top: 20px;
+}
+
+.main-video {
+    width: 300px; /* reduced size */
+    height: auto;
+}
+
+.app-links a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.spheroid-logo {
+    height: 50px;
+    width: auto;
+}
+
+/* Styles for screens smaller than 768px */
+@media (max-width: 768px) {
+    .main-video {
+        width: 100%; /* full width on small screens */
+    }
+    
+    .logo {
+        width: 30px; /* smaller logo on small screens */
+        height: 30px;
+    }
+    
+    .spheroid-logo {
+        height: 30px; /* smaller logo on small screens */
+        width: auto;
+    }
+}
+
+
+.spheroid-logo {
+    height: 50px;
+    width: auto;
+}
+
+
+
+
