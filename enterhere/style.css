@@ -1,0 +1,51 @@
+
+h1.small{
+  line-height: .4;
+}
+
+h2.small{
+  line-height: .4;
+}
+
+body {
+  background-color: black;
+}
+
+/* The animation code */
+@keyframes example {
+  from {color: black;}
+  to {color: crimson;}
+}
+
+/* The element to apply the animation to */
+
+h1 {
+
+    	text-align:center;
+	font-family: "chiller regular"; font-size: 150px;
+  	animation-name: example;
+  	animation-duration: 30s;
+}
+
+h2 {
+
+    	text-align:center;
+	font-family: "chiller regular"; font-size: 100px;
+  	color: white
+}
+
+.media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a.small {
+    font-size: 20px;
+    color: blue;
+    text-decoration: underline;
+}
+
+
+
+

@@ -35,6 +35,11 @@ body {
     width: auto;
 }
 
+.game-logo {
+    height: 250px;
+    width: auto;
+}
+
 /* Styles for screens smaller than 768px */
 @media (max-width: 768px) {
     .main-video {
