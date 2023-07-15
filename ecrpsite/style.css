@@ -30,6 +30,7 @@ div {
 #item3 { top: 333px; left: 770px; }
 #item4 { top: 250px; left: 1100px; }
 #item5 { top: 500px; left: 1080px }
+#item6 { top: 400px; left: 1200; }
 /* Add more items as needed, adjust the positions as you prefer */
 /* now to rotate the items*/
 
@@ -43,6 +44,10 @@ div {
 
 #item4 {
     transform: rotate(-7deg); 
+}
+
+#item6 {
+	transform: rotate(12deg);
 }
 
 section {
