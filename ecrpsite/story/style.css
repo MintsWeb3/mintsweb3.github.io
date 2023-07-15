@@ -1,6 +1,17 @@
 body {
     background-color: black;
     color: white;
+    margin: 50px; /* Adjust the margin as needed */
+    font-family: Arial, sans-serif; /* This is an example of a sans-serif font */
+    font-size: 20px; /* Adjust the font size as needed */
+}
+
+blockquote {
+	font-size: 30px; /* This will make the font size in the blockquote bigger than the body text */
+	margin-left: 60px; /* Adjust the margin as needed */
+	margin-right: 60px; /* Adjust the margin as needed */
+	background-color: #000000;
+	color: white;
 }
 
 
