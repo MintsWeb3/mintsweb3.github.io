@@ -1,18 +1,77 @@
 body {
-    background-color: black;
-    color: white;
-    margin: 50px; /* Adjust the margin as needed */
-    font-family: Arial, sans-serif; /* This is an example of a sans-serif font */
-    font-size: 20px; /* Adjust the font size as needed */
+    background-image: url('detective.png');
+
+    background-color: #000;
+    box-sizing: border-box;
+    margin: 50px auto;
+    padding: 0;
+    font-family: 'Special Elite', cursive;
+    color: #fff;
 }
 
-blockquote {
-	font-size: 30px; /* This will make the font size in the blockquote bigger than the body text */
-	margin-left: 60px; /* Adjust the margin as needed */
-	margin-right: 60px; /* Adjust the margin as needed */
-	background-color: #000000;
-	color: white;
+.page {
+    border: 3px solid #fff;
+    border-radius: 20px;
+    box-sizing: border-box;
+    display: block;
+    float: none;
+    height: auto;
+    margin: 50px auto;
+    padding: 50px;
+    position: relative;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.logo {
+    display: block;
+    height: 400px;
+    margin: 0 auto 20px;
+    width: auto;
+}
+
+h1 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 20px;
+}
+
+.character-stickers {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.character-stickers img {
+    border: 3px solid #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    height: 80px;
+    margin: 0 10px;
+    width: 80px;
+}
+
+.image-credit {
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    font-size: 0.8em;
+}
+
+p {
+	font-size: 1.9em;
+	line-spacing: 1.9em;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+video {
+    max-width: 30%;
 }
 
 
-	
+
