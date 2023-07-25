@@ -5,6 +5,16 @@ body {
     padding-top: 20px;
 }
 
+.row {
+	display: flex;
+	justify-content: space-around;
+}
+
+.play-button {
+	display: flex;
+	justify-content: center;
+}
+
 .container {
     background-color: #1f1f1f;
     padding: 20px;
@@ -55,13 +65,13 @@ body {
         height: 30px; /* smaller logo on small screens */
         width: auto;
     }
+    
 }
+	
 
 
-.spheroid-logo {
-    height: 50px;
-    width: auto;
-}
+
+
 
 
 
