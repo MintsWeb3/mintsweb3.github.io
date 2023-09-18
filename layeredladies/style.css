@@ -1,0 +1,238 @@
+body {
+  background-color: #8A871C;
+}
+
+header {
+  background-color: #2d3d43;
+  border: 1px solid black;
+  padding: 10px;
+  
+  border-radius: 8px;
+  color: white;
+}
+
+
+header h1 {
+  font-family: 'PoetsenOne', sans-serif;
+  color: #D6D240;
+  font-weight: 400;
+  word-wrap: break-word;
+  text-align: center;
+  margin-top: 20px; /* Adjust the value as per your preference to move the h1 down */
+}
+
+h3{
+  color:white;
+}
+
+
+h2 {
+  
+  font-family: 'Crossed Out';
+  color:black;
+ /* font-size:.2em; comment out for an experiment*/
+  word-wrap: break-word;
+
+}
+.aside-img {
+  float: left; 
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 50%; /* This will now correctly determine the width of the image */
+  max-width: 100%; /* Ensures the image doesn't stretch beyond its natural size */
+}
+
+
+img.img-fluid {
+  /*width: 100%; /* Mwake image fill the container */
+  max-height: 300px; /* Set max-height for larger screens */
+  object-fit: contain; /* Maintain the aspect ratio */
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.img-portrait {
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  float: left;
+  
+  height: auto; /* This will maintain the aspect ratio */
+  object-fit: contain; /* i have tried fit and contain here both are the same? */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 50%; /* This will now correctly determine the width of the image */
+  max-width: 100%; /* Ensures the image doesn't stretch beyond its natural size */
+}
+
+
+@media (max-width: 767px) {
+  img.img-fluid {
+    max-height: none; /* Remove max-height for small screens */
+    width: auto; /* Set width to auto for small screens to prevent stretching */
+    max-width: 100%; /* Ensure it doesn't exceed the container width */
+  }
+
+  header h1 {
+    font-size: 8px; /* Adjust font size on smaller screens */
+  }
+
+  header .col-12 {
+    text-align: center; /* Center the content for small screens */
+  }
+}
+
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 2.5rem; /* Set a larger font size on larger screens */
+  }
+}
+
+@font-face {
+  font-family: 'Elegant Typewriter';
+  src: url('ELEGANT TYPEWRITER regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Elegant Typewriter';
+  src: url('ELEGANT TYPEWRITER light.ttf') format('truetype');
+  font-weight: 300; /* Light */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Elegant Typewriter';
+  src: url('ELEGANT TYPEWRITER bold.ttf') format('truetype');
+  font-weight: bold; /* Bold */
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'PoetsenOne';
+    src: url('PoetsenOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+   font-family: 'Crossed Out';
+   src: url('crossed_out.ttf') format('truetype');
+}
+
+.middle-left-image {
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width: 75%; /* Adjust as needed */
+  max-width: 600px; /* Adjust as needed */
+}
+
+.middle-right-image {
+  width: 100%; /* Adjust as needed */
+  max-width: 600px; /* Adjust as needed */
+  margin-bottom: 0;
+	margin-top: 10px;
+}
+
+
+
+.btn-black {
+    background-color: #2d3d43;
+    border: 2px solid black;
+    color: white; 
+    font-family: 'Poor Story', cursive;
+}
+
+aside {
+border-left: solid #2d3d43;
+color: white;
+}
+
+p {
+  color: black; /* A softer shade of white */
+  font-family: 'ELEGANT TYPEWRITER';
+	font-weight: normal;
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 1.5em; /* Adds space between paragraphs */
+  text-align: justify; /* Aligns the text evenly on both sides */
+}
+
+
+.aside-img {
+  float: left; 
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 50%; /* This will now correctly determine the width of the image */
+  max-width: 100%; /* Ensures the image doesn't stretch beyond its natural size */
+}
+
+
+
+
+span.badge {
+  font-size: 1.1em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(to right, #56A9D6, #D6D240);
+   margin-top: 10px;
+}
+
+.navbar-nav .nav-item.dropdown.show .nav-link {
+  background-color: #2d3d43; /* Set the background color */
+  color: white; /* Set the font color */
+  font-family: font-family: 'Poor Story', cursive; /* Set the font-family */
+}
+
+.dropdown-menu {
+  background-color: #2d3d43; /* Set the background color of the dropdown menu */
+}
+
+.dropdown-menu .dropdown-item {
+  color: white; /* Set the color of the text inside the dropdown menu */
+  font-family:'Poor Story', cursive; /* Set the font-family of the text inside the dropdown menu */
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #444; /* Set a hover effect for the dropdown items */
+}
+
+footer {
+  background-color: #2d3d43;
+  text-align: center;
+  color: white; /* This is just to make sure the text is visible against the dark background */
+}
+
+.footer {
+	text-align: center;
+	color: white;
+}
+
+
+
+
+
+
+
+/* Color Theme Swatches in Hex */
+.lady-Theme-new2-1-hex { color: #8A871C; }
+.lady-Theme-new2-2-hex { color: #56A9D6; }
+.lady-Theme-new2-3-hex { color: #D6D240; }
+.lady-Theme-new2-4-hex { color: #D62B36; }
+.lady-Theme-new2-5-hex { color: #8A0D16; }
+
+/* Color Theme Swatches in RGBA */
+.lady-Theme-new2-1-rgba { color: rgba(138, 135, 28, 1); }
+.lady-Theme-new2-2-rgba { color: rgba(86, 169, 214, 1); }
+.lady-Theme-new2-3-rgba { color: rgba(214, 210, 64, 1); }
+.lady-Theme-new2-4-rgba { color: rgba(214, 43, 54, 1); }
+.lady-Theme-new2-5-rgba { color: rgba(138, 13, 22, 1); }
+
+/* Color Theme Swatches in HSLA */
+.lady-Theme-new2-1-hsla { color: hsla(58, 66, 32, 1); }
+.lady-Theme-new2-2-hsla { color: hsla(201, 60, 58, 1); }
+.lady-Theme-new2-3-hsla { color: hsla(58, 64, 54, 1); }
+.lady-Theme-new2-4-hsla { color: hsla(356, 67, 50, 1); }
+.lady-Theme-new2-5-hsla { color: hsla(355, 82, 29, 1); }
+
+
