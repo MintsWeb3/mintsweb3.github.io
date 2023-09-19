@@ -34,14 +34,7 @@ h2 {
   word-wrap: break-word;
 
 }
-.aside-img {
-  float: left; 
-  margin-top: 5px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  width: 50%; /* This will now correctly determine the width of the image */
-  max-width: 100%; /* Ensures the image doesn't stretch beyond its natural size */
-}
+
 
 
 img.img-fluid {
@@ -181,7 +174,7 @@ span.badge {
 .navbar-nav .nav-item.dropdown.show .nav-link {
   background-color: #2d3d43; /* Set the background color */
   color: white; /* Set the font color */
-  font-family: font-family: 'Poor Story', cursive; /* Set the font-family */
+font-family: 'Poor Story', cursive; /* Set the font-family */
 }
 
 .dropdown-menu {

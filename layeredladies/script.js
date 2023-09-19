@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', (event) => {
+window.onload = function() {
   document.querySelectorAll('.dropdown-item').forEach(item => {
     item.addEventListener('click', (event) => {
       event.preventDefault();
@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
       loadCarousel(target);
     });
   });
-});
+};
 
 function loadCarousel(target) {
   const imageSets = {
