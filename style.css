@@ -67,8 +67,15 @@ body {
     }
     
 }
-	
 
+.dynamic-info {
+    display: inline-block;  /* This allows the span to accept box-model properties more effectively */
+    border-style: solid;    /* Use 'solid' instead of 'normal' */
+    border-width: 1px;
+    border-color: white;
+    padding: 5px; /* Optional padding for better visual */
+	border-radius: 4px;          
+}
 
 
 
