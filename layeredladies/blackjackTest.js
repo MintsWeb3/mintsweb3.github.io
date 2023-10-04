@@ -37,9 +37,11 @@ function initializeDeck() {
     deck.sort(() => Math.random() - 0.5);
 }
 
-function placeBet(amount) {
-    if (amount <= playerCoins && amount > 0) {
-        playerCoins -= amount;
+function placeBet() {
+    let betAmount = parseInt(document.getElementById('betAmount').value);
+    if (betAmount <= playerCoins && betAmount > 0) {
+        playerCoins -= betAmount;
+        currentBet = betAmount; // update currentBet so that other functions can refer to it
         updateCoinDisplay();
         return true; // bet was successful
     } else {
@@ -47,6 +49,7 @@ function placeBet(amount) {
         return false; // bet failed
     }
 }
+
 
 function winBet(amount) {
     playerCoins += 2 * amount;
@@ -146,11 +149,14 @@ function deal() { checkGameStatus();  document.getElementById("dealerComment").i
 
         displayHands();
         updateScores();
+      // Enable the "Double Down" button right after dealing
+    document.getElementById('doubleDownButton').disabled = false;
     }
 
 }
 
 function hit() {
+   document.getElementById('doubleDownButton').disabled = true;
     playerHand.push(deck.pop());
     displayHands();
     updateScores();
@@ -161,6 +167,7 @@ function hit() {
         
         document.getElementById('hitButton').disabled = true;
         document.getElementById('stayButton').disabled = true;
+      checkGameStatus();
         
       
         
@@ -176,6 +183,7 @@ function hit() {
 
 
 function stay() {
+   document.getElementById('doubleDownButton').disabled = true;
   document.getElementById('dealButton').disabled = false;
     document.getElementById('hitButton').disabled = true;
     document.getElementById('stayButton').disabled = true;
@@ -264,13 +272,6 @@ document.getElementById('playAgainButton').addEventListener('click', function() 
     document.getElementById('stayButton').disabled = true;
 });
 
-function showCoinAnimation() {
-    let coin = document.getElementById("coinAnimation");
-    coin.style.opacity = "1";
-    setTimeout(() => {
-        coin.style.opacity = "0";
-    }, 1000);
-}
 
 const dealerMessages = [
     "Better luck next time!",
@@ -319,6 +320,32 @@ const loseSound = new Audio ('loser.wav')
 //winSound.play();
 //loseSound.play();
 
+function doubleDown() {
+    // 1. Double the player's bet
+    if (placeBet(currentBet)) {  // Use your placeBet function to make sure player has enough coins
+        currentBet *= 2;
+
+        // 2. Deal one additional card to the player
+        hit();
+
+        // 3. If the player's score is over 21, they bust and lose
+        if (playerScore > 21) {
+            loseBet();
+            document.getElementById("dealerComment").innerText = 'Player busts with double down! Dealer wins.';
+            document.getElementById('doubleDownButton').disabled = true;
+            checkGameStatus();  // Check if game is over or player has won based on coins
+            return;  // End the function since the player busted
+        }
+
+        // 4. Player didn't bust, continue with dealer's turn
+        stay();  // This will let the dealer play and determine the winner
+    } else {
+        alert("Not enough coins to double down!");
+    }
+}
+
+
+document.getElementById('doubleDownButton').addEventListener('click', doubleDown);
 
 
 

@@ -29,13 +29,18 @@
 
         </div>
       <div id="coinDisplay">Coins: </div>
-      <div class="coin" id="coinAnimation">💰</div>
+      <label for="betAmount">Bet Amount: </label>
+<input type="number" id="betAmount" value="10" min="1" max="100">
+
+      
 
 
         <div id="buttons">
     <button id="dealButton">Deal</button>
 <button id="hitButton" disabled>Hit</button>
 <button id="stayButton" disabled>Stay</button>
+          <button id="doubleDownButton" disabled>Double Down</button>
+
 
     <button id="playAgainButton" style="display: none;">Play Again</button>
     <div id="endGameMessage" style="display: none;"></div>
